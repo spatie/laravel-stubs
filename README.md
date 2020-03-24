@@ -31,7 +31,7 @@ composer require spatie/laravel-stubs
 You can publish the stubs using this command:
 
 ```bash
-php artisan spatie-stubs:publish
+php artisan spatie-stub:publish
 ```
 
 ## Testing

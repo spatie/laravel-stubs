@@ -10,7 +10,7 @@ use Symfony\Component\Finder\SplFileInfo;
 
 class StubsPublishCommand extends Command
 {
-    protected $signature = 'spatie-stub:publish';
+    protected $signature = 'spatie-stub:publish {--force : Overwrite any existing files}';
 
     protected $description = 'Publish all opinionated stubs that are available for customization';
 
