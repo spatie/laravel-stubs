@@ -10,12 +10,10 @@ class {{ class }}
 {
     public function index()
     {
-        //
     }
 
     public function create()
     {
-        //
     }
 
     /**
@@ -26,7 +24,6 @@ class {{ class }}
      */
     public function store(Request $request)
     {
-        //
     }
 
     /**
@@ -37,7 +34,6 @@ class {{ class }}
      */
     public function show({{ model }} ${{ modelVariable }})
     {
-        //
     }
 
     /**
@@ -48,7 +44,6 @@ class {{ class }}
      */
     public function edit({{ model }} ${{ modelVariable }})
     {
-        //
     }
 
     /**
@@ -60,7 +55,6 @@ class {{ class }}
      */
     public function update(Request $request, {{ model }} ${{ modelVariable }})
     {
-        //
     }
 
     /**
@@ -71,6 +65,5 @@ class {{ class }}
      */
     public function destroy({{ model }} ${{ modelVariable }})
     {
-        //
     }
 }
