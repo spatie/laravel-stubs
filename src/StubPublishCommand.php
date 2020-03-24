@@ -22,7 +22,7 @@ class StubPublishCommand extends Command
             (new Filesystem)->makeDirectory($stubsPath);
         }
 
-        collect(File::files(__DIR__ . '/../stubs'))->each(function(SplFileInfo $file) use ($stubsPath) {
+        collect(File::files(__DIR__ . '/../stubs'))->each(function (SplFileInfo $file) use ($stubsPath) {
             $sourcePath = $file->getPathname();
 
             $targetPath = $stubsPath . "/{$file->getFilename()}";

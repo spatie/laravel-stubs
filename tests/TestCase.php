@@ -3,7 +3,6 @@
 namespace Spatie\Stubs\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\Feed\FeedServiceProvider;
 use Spatie\Stubs\StubServiceProvider;
 
 abstract class TestCase extends Orchestra
@@ -14,5 +13,4 @@ abstract class TestCase extends Orchestra
             StubServiceProvider::class,
         ];
     }
-
 }
