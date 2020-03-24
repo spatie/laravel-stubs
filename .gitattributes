@@ -8,3 +8,4 @@
 /phpunit.xml.dist   export-ignore
 /tests              export-ignore
 /.editorconfig      export-ignore
+/.github            export-ignore
