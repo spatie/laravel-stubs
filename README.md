@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-stubs.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-stubs)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/laravel-stubs/run-tests?label=tests)](https://github.com/spatie/laravel-stubs/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Quality Score](https://img.shields.io/scrutinizer/g/spatie/laravel-stubs.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/laravel-stubs)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-stubs.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-stubs)
 
 This repo contains an opionated version of the Laravel stubs. The most notable changes are:
@@ -11,7 +10,6 @@ This repo contains an opionated version of the Laravel stubs. The most notable c
 - controllers don't extend a base controller
 - none of the model attributes are guared
 - use return type hints where possible
-
 
 ## Support us
 
@@ -29,9 +27,10 @@ composer require spatie/laravel-stubs
 
 ## Usage
 
-``` php
-$skeleton = new Spatie\Stubs();
-echo $skeleton->echoPhrase('Hello, Spatie!');
+You can publish the stubs using this command:
+
+```bash
+php artisan spatie-stubs:publish
 ```
 
 ## Testing
