@@ -2,6 +2,6 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
-## 1.0.0 - 202X-XX-XX
+## 1.0.0 - 2020-03-24
 
 - initial release
