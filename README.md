@@ -10,6 +10,7 @@ This repo contains an opionated version of the Laravel stubs. The most notable c
 - controllers don't extend a base controller
 - none of the model attributes are guarded
 - use return type hints where possible
+- most docblocks have been removed
 
 ## Support us
 
