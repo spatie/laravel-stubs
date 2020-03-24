@@ -32,6 +32,6 @@ class StubsPublishCommand extends Command
             }
         });
 
-        $this->comment('All done!');
+        $this->info('All done!');
     }
 }
