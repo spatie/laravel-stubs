@@ -8,7 +8,7 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\File;
 use Symfony\Component\Finder\SplFileInfo;
 
-class StubPublishCommand extends Command
+class StubsPublishCommand extends Command
 {
     protected $signature = 'spatie-stub:publish';
 
