@@ -8,7 +8,7 @@ This repo contains an opionated version of the Laravel stubs. The most notable c
 
 - the migration doesn't have a `down` function
 - controllers don't extend a base controller
-- none of the model attributes are guared
+- none of the model attributes are guarded
 - use return type hints where possible
 
 ## Support us
