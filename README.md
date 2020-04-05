@@ -26,6 +26,16 @@ You can install the package via composer:
 composer require spatie/laravel-stubs --dev
 ```
 
+If you want to keep your stubs up to date with every update, add this composer hook to your composer.json file:
+
+```json
+"scripts": {
+    "post-update-cmd": [
+        "@php artisan spatie-stub:publish"
+    ]
+}
+```
+
 ## Usage
 
 You can publish the stubs using this command:
