@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^7.4",
-        "laravel/framework": "^7.2"
+        "laravel/framework": "^7.2|^8.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
