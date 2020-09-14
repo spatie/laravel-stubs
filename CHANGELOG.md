@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.0.0 - 2020-09-14
+
+- add Laravel 8 specific stubs
+
 ## 1.1.1 - 2020-09-09
 
 - allow Laravel 8
