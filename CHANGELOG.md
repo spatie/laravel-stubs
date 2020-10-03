@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.0.1 - 2020-10-03
+
+- use `HasFactory` by default
+
 ## 2.0.0 - 2020-09-14
 
 - add Laravel 8 specific stubs
