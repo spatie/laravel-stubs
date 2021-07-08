@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.2.0 - 2021-07-08
+
+- use anonymous migrations by default
+
 ## 2.1.0 - 2020-12-02
 
 - add support for PHP 8
