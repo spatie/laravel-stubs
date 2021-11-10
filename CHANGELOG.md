@@ -2,6 +2,20 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.3.0 - 2021-11-10
+
+## What's Changed
+
+- Update php-cs-fixer.yml by @llabbasmkhll in https://github.com/spatie/laravel-stubs/pull/13
+- Publish service provider stub by @mikemand in https://github.com/spatie/laravel-stubs/pull/14
+
+## New Contributors
+
+- @llabbasmkhll made their first contribution in https://github.com/spatie/laravel-stubs/pull/13
+- @mikemand made their first contribution in https://github.com/spatie/laravel-stubs/pull/14
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.2.0...2.3.0
+
 ## 2.2.0 - 2021-07-08
 
 - use anonymous migrations by default
