@@ -10,20 +10,19 @@ use Symfony\Component\Finder\SplFileInfo;
 
 class StubsPublishCommand extends Command
 {
+    use ConfirmableTrait;
     protected $signature = 'spatie-stub:publish {--force : Overwrite any existing files}';
 
     protected $description = 'Publish all opinionated stubs that are available for customization';
-
-    use ConfirmableTrait;
 
     public function handle()
     {
         if (! $this->confirmToProceed()) {
             return 1;
         }
-        
+
         if (! is_dir($stubsPath = $this->laravel->basePath('stubs'))) {
-            (new Filesystem)->makeDirectory($stubsPath);
+            (new Filesystem())->makeDirectory($stubsPath);
         }
 
         collect(File::files(__DIR__ . '/../stubs'))->each(function (SplFileInfo $file) use ($stubsPath) {
