@@ -31,9 +31,9 @@ class StubsPublishCommand extends Command
             return $this->unpublished($files);
         });
 
-        $this->publish($files);
+        $published = $this->publish($files);
 
-        $this->info("{$files->count()} stubs published.");
+        $this->info("{$published} / {$files->count()} stubs published.");
     }
 
     public function unpublished(Collection $files): Collection
@@ -43,11 +43,16 @@ class StubsPublishCommand extends Command
         });
     }
 
-    public function publish(Collection $files): Collection
+    public function publish(Collection $files): int
     {
-        return $files->each(function (SplFileInfo $file) {
-            file_put_contents($this->targetPath($file), file_get_contents($file->getPathname()));
-        });
+        return $files->reduce(function (int $published, SplFileInfo $file) {
+            if (false === file_put_contents($this->targetPath($file), file_get_contents($file->getPathname()))) {
+                $this->warn("Failed to publish {$file->getBasename('.stub')}");
+                return $published;
+            }
+
+            return $published + 1;
+        }, 0);
     }
 
     public function targetPath(SplFileInfo $file): string
