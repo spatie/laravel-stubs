@@ -5,12 +5,14 @@ namespace Spatie\Stubs;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Symfony\Component\Finder\SplFileInfo;
 
 class StubsPublishCommand extends Command
 {
     use ConfirmableTrait;
+
     protected $signature = 'spatie-stub:publish {--force : Overwrite any existing files}';
 
     protected $description = 'Publish all opinionated stubs that are available for customization';
@@ -25,16 +27,31 @@ class StubsPublishCommand extends Command
             (new Filesystem())->makeDirectory($stubsPath);
         }
 
-        collect(File::files(__DIR__ . '/../stubs'))->each(function (SplFileInfo $file) use ($stubsPath) {
-            $sourcePath = $file->getPathname();
-
-            $targetPath = $stubsPath . "/{$file->getFilename()}";
-
-            if (! file_exists($targetPath) || $this->option('force')) {
-                file_put_contents($targetPath, file_get_contents($sourcePath));
-            }
+        $files = collect(File::files(__DIR__ . '/../stubs'))->unless($this->option('force'), function ($files) {
+            return $this->unpublished($files);
         });
 
-        $this->info('All done!');
+        $this->publish($files);
+
+        $this->info("{$files->count()} stubs published.");
+    }
+
+    public function unpublished(Collection $files): Collection
+    {
+        return $files->reject(function (SplFileInfo $file) {
+            return file_exists($this->targetPath($file));
+        });
+    }
+
+    public function publish(Collection $files): Collection
+    {
+        return $files->each(function (SplFileInfo $file) {
+            file_put_contents($this->targetPath($file), file_get_contents($file->getPathname()));
+        });
+    }
+
+    public function targetPath(SplFileInfo $file): string
+    {
+        return $this->laravel->basePath('stubs') . "/{$file->getFilename()}";
     }
 }
