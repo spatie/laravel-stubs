@@ -33,7 +33,7 @@ If you want to keep your stubs up to date with every update, add this composer h
 ```json
 "scripts": {
     "post-update-cmd": [
-        "@php artisan spatie-stub:publish"
+        "@php artisan spatie-stub:publish --force"
     ]
 }
 ```

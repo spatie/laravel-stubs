@@ -5,12 +5,14 @@ namespace Spatie\Stubs;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Symfony\Component\Finder\SplFileInfo;
 
 class StubsPublishCommand extends Command
 {
     use ConfirmableTrait;
+
     protected $signature = 'spatie-stub:publish {--force : Overwrite any existing files}';
 
     protected $description = 'Publish all opinionated stubs that are available for customization';
@@ -25,16 +27,32 @@ class StubsPublishCommand extends Command
             (new Filesystem())->makeDirectory($stubsPath);
         }
 
-        collect(File::files(__DIR__ . '/../stubs'))->each(function (SplFileInfo $file) use ($stubsPath) {
-            $sourcePath = $file->getPathname();
+        $files = collect(File::files(__DIR__ . '/../stubs'))
+            ->unless($this->option('force'), fn ($files) => $this->unpublished($files));
 
-            $targetPath = $stubsPath . "/{$file->getFilename()}";
+        $published = $this->publish($files);
 
-            if (! file_exists($targetPath) || $this->option('force')) {
-                file_put_contents($targetPath, file_get_contents($sourcePath));
-            }
+        $this->info("{$published} / {$files->count()} stubs published.");
+    }
+
+    public function unpublished(Collection $files): Collection
+    {
+        return $files->reject(function (SplFileInfo $file) {
+            return file_exists($this->targetPath($file));
         });
+    }
 
-        $this->info('All done!');
+    public function publish(Collection $files): int
+    {
+        return $files->reduce(function (int $published, SplFileInfo $file) {
+            file_put_contents($this->targetPath($file), file_get_contents($file->getPathname()));
+
+            return $published + 1;
+        }, 0);
+    }
+
+    public function targetPath(SplFileInfo $file): string
+    {
+        return "{$this->laravel->basePath('stubs')}/{$file->getFilename()}";
     }
 }
