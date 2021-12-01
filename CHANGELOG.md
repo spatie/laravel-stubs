@@ -2,6 +2,20 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.3.1 - 2021-12-01
+
+## What's Changed
+
+- Fix php-cs-fixer by @erikn69 in https://github.com/spatie/laravel-stubs/pull/15
+- Improved behaviour when stubs are updated by @chrisinit in https://github.com/spatie/laravel-stubs/pull/16
+
+## New Contributors
+
+- @erikn69 made their first contribution in https://github.com/spatie/laravel-stubs/pull/15
+- @chrisinit made their first contribution in https://github.com/spatie/laravel-stubs/pull/16
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.3.0...2.3.1
+
 ## 2.3.0 - 2021-11-10
 
 ## What's Changed
