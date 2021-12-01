@@ -27,9 +27,8 @@ class StubsPublishCommand extends Command
             (new Filesystem())->makeDirectory($stubsPath);
         }
 
-        $files = collect(File::files(__DIR__ . '/../stubs'))->unless($this->option('force'), function ($files) {
-            return $this->unpublished($files);
-        });
+        $files = collect(File::files(__DIR__ . '/../stubs'))
+            ->unless($this->option('force'), fn ($files) => $this->unpublished($files));
 
         $published = $this->publish($files);
 
@@ -46,10 +45,7 @@ class StubsPublishCommand extends Command
     public function publish(Collection $files): int
     {
         return $files->reduce(function (int $published, SplFileInfo $file) {
-            if (false === file_put_contents($this->targetPath($file), file_get_contents($file->getPathname()))) {
-                $this->warn("Failed to publish {$file->getBasename('.stub')}");
-                return $published;
-            }
+            file_put_contents($this->targetPath($file), file_get_contents($file->getPathname()));
 
             return $published + 1;
         }, 0);
@@ -57,6 +53,6 @@ class StubsPublishCommand extends Command
 
     public function targetPath(SplFileInfo $file): string
     {
-        return $this->laravel->basePath('stubs') . "/{$file->getFilename()}";
+        return "{$this->laravel->basePath('stubs')}/{$file->getFilename()}";
     }
 }
