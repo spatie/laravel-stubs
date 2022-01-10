@@ -1,11 +1,11 @@
 {
-    "name": "spatie/laravel-stubs",
+    "name": "chengkangzai/laravel-stubs",
     "description": "Opinionated Laravel stubs",
     "keywords": [
-        "spatie",
+        "chengkangzai",
         "laravel-stubs"
     ],
-    "homepage": "https://github.com/spatie/laravel-stubs",
+    "homepage": "https://github.com/chengkangzai/laravel-stubs",
     "license": "MIT",
     "authors": [
         {
@@ -16,7 +16,7 @@
         },
         {
             "name": "Ching Cheng Kang",
-            "email": "pycck@hotmail.com",
+            "email": "hi@chengkangzai.com",
             "homepage": "https://chengkangzai.com",
             "role": "Developer"
         }
@@ -26,17 +26,18 @@
         "laravel/framework": "^8.71"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.4",
-        "mockery/mockery": "^1.4"
+        "mockery/mockery": "^1.4",
+        "orchestra/testbench": "^6.23",
+        "phpunit/phpunit": "^9.4"
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Stubs\\": "src"
+            "ChengKangZai\\Stubs\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Stubs\\Tests\\": "tests"
+            "ChengKangZai\\Stubs\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,7 +50,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Stubs\\StubsServiceProvider"
+                "ChengKangZai\\Stubs\\StubsServiceProvider"
             ]
         }
     },
