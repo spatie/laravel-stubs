@@ -6,6 +6,11 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class {{ class }} extends FormRequest
 {
+    public function authorize()
+    {
+        return true;
+    }
+
     public function rules(): array
     {
         return [
