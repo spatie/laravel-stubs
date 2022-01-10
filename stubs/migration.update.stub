@@ -11,4 +11,11 @@ return new class extends Migration
         Schema::table('{{ table }}', function (Blueprint $table) {
         });
     }
+
+    public function down()
+    {
+        Schema::table('{{ table }}', function (Blueprint $table) {
+            //
+        });
+    }
 };
