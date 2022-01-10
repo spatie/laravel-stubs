@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Stubs\Tests;
+namespace ChengKangZai\Stubs\Tests;
 
+use ChengKangZai\Stubs\StubsServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\Stubs\StubsServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
             StubsServiceProvider::class,

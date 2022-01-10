@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Stubs\Tests;
+namespace ChengKangZai\Stubs\Tests;
 
 use Illuminate\Support\Facades\File;
 
@@ -13,7 +13,7 @@ class StubPublishCommandTest extends TestCase
 
         File::deleteDirectory($targetStubsPath);
 
-        $this->artisan('spatie-stub:publish')->assertExitCode(0);
+        $this->artisan('chengkangzai-stub:publish')->assertExitCode(0);
 
         $stubPath = __DIR__ . '/../stubs/migration.stub';
 
