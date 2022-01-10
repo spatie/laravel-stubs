@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Stubs\Canvas;
+namespace ChengKangZai\Stubs\Canvas;
 
 class Package extends \Orchestra\Canvas\Core\Presets\Package
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Stubs;
+namespace ChengKangZai\Stubs;
 
 use Illuminate\Support\ServiceProvider;
 
