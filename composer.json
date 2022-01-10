@@ -13,6 +13,12 @@
             "email": "freek@spatie.be",
             "homepage": "https://spatie.be",
             "role": "Developer"
+        },
+        {
+            "name": "Ching Cheng Kang",
+            "email": "pycck@hotmail.com",
+            "homepage": "https://chengkangzai.com",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -34,7 +40,6 @@
         }
     },
     "scripts": {
-        "format": "vendor/bin/php-cs-fixer fix",
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
