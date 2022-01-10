@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Stubs;
+namespace ChengKangZai\Stubs;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
@@ -13,11 +13,11 @@ class StubsPublishCommand extends Command
 {
     use ConfirmableTrait;
 
-    protected $signature = 'spatie-stub:publish {--force : Overwrite any existing files}';
+    protected $signature = 'chengkangzai-stub:publish {--force : Overwrite any existing files}';
 
     protected $description = 'Publish all opinionated stubs that are available for customization';
 
-    public function handle()
+    public function handle(): int
     {
         if (! $this->confirmToProceed()) {
             return 1;
@@ -33,6 +33,8 @@ class StubsPublishCommand extends Command
         $published = $this->publish($files);
 
         $this->info("{$published} / {$files->count()} stubs published.");
+
+        return self::SUCCESS;
     }
 
     public function unpublished(Collection $files): Collection
