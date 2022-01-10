@@ -8,7 +8,7 @@ use Tests\TestCase;
 
 class {{ class }} extends TestCase
 {
-    public function it_can_test()
+    public function test_it_can_test()
     {
     }
 }
