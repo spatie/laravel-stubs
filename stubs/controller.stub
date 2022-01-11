@@ -1,10 +1,11 @@
 <?php
 
+use {{ rootNamespace }}Http\Controllers\Controller;
 namespace {{ namespace }};
 
 use Illuminate\Http\Request;
 
-class {{ class }}
+class {{ class }} extends Controller
 {
     public function index()
     {
