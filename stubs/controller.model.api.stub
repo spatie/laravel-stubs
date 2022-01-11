@@ -2,6 +2,7 @@
 
 namespace {{ namespace }};
 
+use {{ namespacedModel }};
 use {{ rootNamespace }}Http\Controllers\Controller;
 use {{ namespacedRequests }}
 

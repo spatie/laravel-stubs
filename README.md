@@ -6,11 +6,10 @@
 
 This repo contains opinionated versions of the Laravel stubs. The most notable changes are:
 
-- migrations don't have a `down` function
-- controllers don't extend a base controller
-- none of the model attributes are guarded
 - use return type hints where possible
 - most docblocks have been removed
+- migration are returning class instead of creating class
+- Form Request are authorise by default
 
 ## Installation
 
