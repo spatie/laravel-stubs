@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.3.6 - 2022-01-11
+
+## What's Changed
+
+- Fix minor bug and favor by @chengkangzai in https://github.com/chengkangzai/laravel-stubs/pull/3
+
+**Full Changelog**: https://github.com/chengkangzai/laravel-stubs/compare/2.3.5...2.3.6
+
 ## 2.3.5 - 2022-01-11
 
 fix bug where return Command::Success will cause the confusion of IDE
