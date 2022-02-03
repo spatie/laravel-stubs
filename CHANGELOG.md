@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.4.1 - 2022-02-03
+
+## What's Changed
+
+- Move orchestra/testbench to dev dependencies by @geidelguerra in https://github.com/spatie/laravel-stubs/pull/17
+
+## New Contributors
+
+- @geidelguerra made their first contribution in https://github.com/spatie/laravel-stubs/pull/17
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.4.0...2.4.1
+
 ## 2.4.0 - 2022-01-14
 
 - support Laravel 9
