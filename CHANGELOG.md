@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.4.2 - 2022-02-07
+
+## What's Changed
+
+- Remove docblock from policy method by @Xammie in https://github.com/spatie/laravel-stubs/pull/18
+
+## New Contributors
+
+- @Xammie made their first contribution in https://github.com/spatie/laravel-stubs/pull/18
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.4.1...2.4.2
+
 ## 2.4.1 - 2022-02-03
 
 ## What's Changed
