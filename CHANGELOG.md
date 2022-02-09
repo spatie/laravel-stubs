@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.4.3 - 2022-02-09
+
+## What's Changed
+
+- Add event stub by @geidelguerra in https://github.com/spatie/laravel-stubs/pull/19
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.4.2...2.4.3
+
 ## 2.4.2 - 2022-02-07
 
 ## What's Changed
