@@ -2,7 +2,43 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
-## 2.3.6 - 2022-01-11
+## 2.4.3 - 2022-02-09
+
+## What's Changed
+
+- Add event stub by @geidelguerra in https://github.com/spatie/laravel-stubs/pull/19
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.4.2...2.4.3
+
+## 2.4.2 - 2022-02-07
+
+## What's Changed
+
+- Remove docblock from policy method by @Xammie in https://github.com/spatie/laravel-stubs/pull/18
+
+## New Contributors
+
+- @Xammie made their first contribution in https://github.com/spatie/laravel-stubs/pull/18
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.4.1...2.4.2
+
+## 2.4.1 - 2022-02-03
+
+## What's Changed
+
+- Move orchestra/testbench to dev dependencies by @geidelguerra in https://github.com/spatie/laravel-stubs/pull/17
+
+## New Contributors
+
+- @geidelguerra made their first contribution in https://github.com/spatie/laravel-stubs/pull/17
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.4.0...2.4.1
+
+## 2.4.0 - 2022-01-14
+
+- support Laravel 9
+
+## 2.3.1 - 2021-12-01
 
 ## What's Changed
 
