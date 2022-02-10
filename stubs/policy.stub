@@ -40,13 +40,6 @@ class {{ class }}
         //
     }
 
-    /**
-     * Determine whether the user can permanently delete the model.
-     *
-     * @param  \{{ namespacedUserModel }}  $user
-     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
-     * @return mixed
-     */
     public function forceDelete({{ user }} $user, {{ model }} ${{ modelVariable }})
     {
         //
