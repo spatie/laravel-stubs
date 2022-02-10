@@ -2,9 +2,6 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
-<<<<<<< HEAD
-## 2.3.6 - 2022-01-11
-=======
 ## 2.4.3 - 2022-02-09
 
 ## What's Changed
@@ -42,7 +39,6 @@ All notable changes to `laravel-stubs` will be documented in this file
 - support Laravel 9
 
 ## 2.3.1 - 2021-12-01
->>>>>>> e862f8b6c60d2202fced9e10db54dedd826101bf
 
 ## What's Changed
 
