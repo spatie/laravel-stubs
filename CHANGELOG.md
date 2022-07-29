@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.4.4 - 2022-07-29
+
+### What's Changed
+
+- Updated factory stub to use generics by @Xammie in https://github.com/spatie/laravel-stubs/pull/21
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.4.3...2.4.4
+
 ## 2.4.3 - 2022-02-09
 
 ## What's Changed
