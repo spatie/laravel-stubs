@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.4.3 - 2022-02-10
+
+## What's Changed
+
+- Add Support for laravel 9 by @chengkangzai in https://github.com/chengkangzai/laravel-stubs/pull/4
+
+- Dropping Support for PHP 7.3
+- Adding support for laravel 9
+- Update event and policy stub
+
+**Full Changelog**: https://github.com/chengkangzai/laravel-stubs/compare/2.3.6...2.4.3
+
 ## 2.4.3 - 2022-02-09
 
 ## What's Changed
