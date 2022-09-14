@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.5.0 - 2022-09-14
+
+- use invokable rule by default
+
 ## 2.4.4 - 2022-07-29
 
 ### What's Changed
