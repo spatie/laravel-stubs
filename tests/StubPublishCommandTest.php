@@ -1,24 +1,19 @@
 <?php
 
-namespace Spatie\Stubs\Tests;
-
 use Illuminate\Support\Facades\File;
 
-class StubPublishCommandTest extends TestCase
-{
-    /** @test */
-    public function it_can_publish_stubs()
-    {
-        $targetStubsPath = $this->app->basePath('stubs');
+use function PHPUnit\Framework\assertFileEquals;
 
-        File::deleteDirectory($targetStubsPath);
+it('can publish stubs', function () {
+    $targetStubsPath = $this->app->basePath('stubs');
 
-        $this->artisan('spatie-stub:publish')->assertExitCode(0);
+    File::deleteDirectory($targetStubsPath);
 
-        $stubPath = __DIR__ . '/../stubs/migration.stub';
+    $this->artisan('spatie-stub:publish')->assertExitCode(0);
 
-        $publishedStubPath = $targetStubsPath . '/migration.stub';
+    $stubPath = __DIR__ . '/../stubs/migration.stub';
 
-        $this->assertFileEquals($stubPath, $publishedStubPath);
-    }
-}
+    $publishedStubPath = $targetStubsPath . '/migration.stub';
+
+    assertFileEquals($stubPath, $publishedStubPath);
+});
