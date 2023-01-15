@@ -2,6 +2,19 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.5.1 - 2023-01-15
+
+### What's Changed
+
+- Polish stubs (by @freekmurze)
+- Convert all tests to pest by @alexmanase in https://github.com/spatie/laravel-stubs/pull/26
+
+### New Contributors
+
+- @alexmanase made their first contribution in https://github.com/spatie/laravel-stubs/pull/26
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.5.0...2.5.1
+
 ## 2.5.0 - 2022-09-14
 
 - use invokable rule by default
