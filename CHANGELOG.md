@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.5.2 - 2023-01-23
+
+- support L10
+
 ## 2.5.1 - 2023-01-15
 
 ### What's Changed
