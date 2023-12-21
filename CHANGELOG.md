@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.5.3 - 2023-12-21
+
+### What's Changed
+
+* Update rule stub by @Carnicero90 in https://github.com/spatie/laravel-stubs/pull/27
+
+### New Contributors
+
+* @Carnicero90 made their first contribution in https://github.com/spatie/laravel-stubs/pull/27
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.5.2...2.5.3
+
 ## 2.5.2 - 2023-01-23
 
 - support L10
