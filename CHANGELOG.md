@@ -2,6 +2,19 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 2.5.4 - 2024-02-14
+
+### What's Changed
+
+* remove unnecessary dockblocks by @mokhosh in https://github.com/spatie/laravel-stubs/pull/28
+* add laravel 11 support by @mokhosh in https://github.com/spatie/laravel-stubs/pull/29
+
+### New Contributors
+
+* @mokhosh made their first contribution in https://github.com/spatie/laravel-stubs/pull/28
+
+**Full Changelog**: https://github.com/spatie/laravel-stubs/compare/2.5.3...2.5.4
+
 ## 2.5.3 - 2023-12-21
 
 ### What's Changed
