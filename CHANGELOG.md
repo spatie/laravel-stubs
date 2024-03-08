@@ -2,6 +2,13 @@
 
 All notable changes to `laravel-stubs` will be documented in this file
 
+## 3.0.0 - 2024-03-08
+
+### What's Changed
+
+* Add L11 stubs
+* Simplify request and factory by @mokhosh in https://github.com/spatie/laravel-stubs/pull/32
+
 ## 2.5.4 - 2024-02-14
 
 ### What's Changed
