@@ -7,7 +7,7 @@ use Spatie\Stubs\StubsServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
             StubsServiceProvider::class,
