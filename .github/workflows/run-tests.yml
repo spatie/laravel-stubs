@@ -50,6 +50,7 @@ jobs:
           composer config prefer-stable true
 
       - name: Install dependencies
+        shell: bash
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction
